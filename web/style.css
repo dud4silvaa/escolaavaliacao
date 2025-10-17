@@ -1,0 +1,422 @@
+/* ===== ESTILOS GERAIS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== TELA DE LOGIN ===== */
+.login-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-container h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#loginForm {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#loginForm input {
+  padding: 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#loginForm input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#loginForm button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#loginForm button:hover {
+  transform: translateY(-2px);
+}
+
+.erro {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ffeaea;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+
+/* ===== CABEÇALHO DASHBOARD ===== */
+.topo {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#nomeProfessor {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#sair {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#sair:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+/* ===== CORPO PRINCIPAL ===== */
+main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.acoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+#cadastrar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+#cadastrar:hover {
+  transform: translateY(-2px);
+}
+
+main h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* ===== TABELA ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+th {
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f8f9ff;
+}
+
+td {
+  padding: 18px 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ===== FORMULÁRIOS DE CADASTRO ===== */
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.container h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#formTurma {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#formTurma label {
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#formTurma input {
+  padding: 12px 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#formTurma input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#formTurma button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#formTurma button:hover {
+  transform: translateY(-2px);
+}
+
+.voltar {
+  width: 100%;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+}
+
+.voltar:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+/* ===== TELA DE CADASTRAR ATIVIDADE ===== */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.header button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Formulário de atividade */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+form input {
+  padding: 12px 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+form button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== BOTÕES DE AÇÃO NA TABELA ===== */
+.btn-excluir {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+
+.btn-visualizar {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-excluir:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+
+.btn-visualizar:hover {
+  background-color: #219a52;
+  transform: translateY(-1px);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .topo, .header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .acoes {
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+  
+  .btn-excluir, .btn-visualizar {
+    padding: 6px 12px;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  #loginForm {
+    padding: 30px 20px;
+  }
+  
+  .login-container h2 {
+    font-size: 28px;
+  }
+}

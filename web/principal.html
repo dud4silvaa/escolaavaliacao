@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Professor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="topo">
+      <span id="nomeProfessor">Nome do Professor</span>
+      <button id="sair" onclick="sair()">Sair</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="acoes">
+      <button id="cadastrar">Cadastrar turma</button>
+    </div>
+
+    <h3>Turmas</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Nome</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody id="listaTurmas">
+        
+      </tbody>
+    </table>
+  </main>
+
+  <script src="principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Turma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="topo">
+      <span id="nomeProfessor">Nome do Professor</span>
+      <button id="sair" onclick="sair()">Sair</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Cadastrar Turma</h2>
+    <form id="formTurma">
+      <label for="nomeTurma">Nome da turma:</label>
+      <input type="text" id="nomeTurma" required placeholder="Ex: Desenvolvimento de Sistemas B402">
+      <button type="submit">Cadastrar</button>
+    </form>
+    <button class="voltar" onclick="window.location.href='principal.html'">Voltar</button>
+  </main>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
